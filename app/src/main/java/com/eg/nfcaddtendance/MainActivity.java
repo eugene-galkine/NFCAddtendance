@@ -1,5 +1,6 @@
 package com.eg.nfcaddtendance;
 
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.PendingIntent;
 import android.content.DialogInterface;
@@ -8,6 +9,7 @@ import android.nfc.NdefMessage;
 import android.nfc.NdefRecord;
 import android.nfc.NfcAdapter;
 import android.nfc.Tag;
+import android.os.Build;
 import android.os.Parcelable;
 import android.provider.Settings;
 import android.support.v7.app.AppCompatActivity;
@@ -19,7 +21,7 @@ import android.widget.Toast;
 
 import java.util.Date;
 
-public class MainActivity extends AppCompatActivity
+public class MainActivity extends Activity
 {
     private NfcAdapter mAdapter;
     private PendingIntent mPendingIntent;
